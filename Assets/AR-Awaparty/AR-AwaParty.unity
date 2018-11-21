@@ -702,7 +702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6941ec02ead994c9b848d640887441f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 10}
   m_HitTransform: {fileID: 0}
   maxRayDistance: 30
   collisionLayer:
@@ -4281,7 +4280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6941ec02ead994c9b848d640887441f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 10}
   m_HitTransform: {fileID: 0}
   maxRayDistance: 30
   collisionLayer:
@@ -4332,10 +4330,13 @@ MonoBehaviour:
   m_camera: {fileID: 10}
   startAlignment: 0
   planeDetection: 0
-  detectionImages: {fileID: 11400000, guid: f35c30bad61554e9e85a89491e6b0d99, type: 2}
   getPointCloud: 1
   enableLightEstimation: 1
   enableAutoFocus: 1
+  environmentTexturing: 0
+  detectionImages: {fileID: 11400000, guid: f35c30bad61554e9e85a89491e6b0d99, type: 2}
+  maximumNumberOfTrackedImages: 0
+  detectionObjects: {fileID: 0}
 --- !u!4 &1121666033
 Transform:
   m_ObjectHideFlags: 0
@@ -5232,7 +5233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1459121973
 Transform:
   m_ObjectHideFlags: 0
