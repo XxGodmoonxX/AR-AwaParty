@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNames:
-  - DefeatBoss
+  - AR-AwaParty
 --- !u!1 &1853767649
 GameObject:
   m_ObjectHideFlags: 0
