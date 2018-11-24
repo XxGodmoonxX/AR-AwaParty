@@ -4335,7 +4335,7 @@ MonoBehaviour:
   enableAutoFocus: 1
   environmentTexturing: 0
   detectionImages: {fileID: 11400000, guid: f35c30bad61554e9e85a89491e6b0d99, type: 2}
-  maximumNumberOfTrackedImages: 0
+  maximumNumberOfTrackedImages: 2
   detectionObjects: {fileID: 0}
 --- !u!4 &1121666033
 Transform:
