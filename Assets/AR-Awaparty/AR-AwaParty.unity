@@ -1497,6 +1497,7 @@ GameObject:
   - component: {fileID: 120771771}
   - component: {fileID: 120771772}
   - component: {fileID: 120771773}
+  - component: {fileID: 120771774}
   m_Layer: 0
   m_Name: Boss_Player
   m_TagString: Player_1
@@ -1625,6 +1626,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 582718190}
+--- !u!95 &120771774
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 120771765}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &125206910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,7 +1967,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 174431909}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -1.5, z: -0}
+  m_LocalPosition: {x: 0, y: -0.2, z: -1.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1751575763}
@@ -4140,7 +4158,7 @@ Transform:
   - {fileID: 1674490911}
   m_Father: {fileID: 1264143252}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.00048630024, y: 74.88207, z: 0.00037052252}
 --- !u!23 &521397891
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5397,7 +5415,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 764671317}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 35.085384, y: 0.24259329, z: 89.52403}
 --- !u!23 &758393247
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6092,7 +6110,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1003226303}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 79.999985, y: 0.0000393335, z: 90.00003}
 --- !u!23 &871385534
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6635,7 +6653,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1795974916}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 79.6108, y: -0.14378434, z: 91.130424}
 --- !u!23 &953320382
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6795,7 +6813,7 @@ Transform:
   - {fileID: 871385533}
   m_Father: {fileID: 1264143252}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.0002919736, y: 35.329674, z: 0.00008915726}
 --- !u!23 &1003226304
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7922,7 +7940,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1264143252}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.000027214044, y: -0.000000026680437, z: 0}
 --- !u!23 &1194191404
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10448,7 +10466,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 521397890}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 79.73355, y: 1.4774939, z: 91.04746}
 --- !u!23 &1674490912
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11255,7 +11273,7 @@ Transform:
   - {fileID: 953320381}
   m_Father: {fileID: 1264143252}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.00043767533, y: 91.58448, z: -0.000039283}
 --- !u!23 &1795974917
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12633,7 +12651,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2043821817}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -1.33, z: 1.18}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.1606405, y: 1.1606401, z: 1.1606401}
   m_Children:
   - {fileID: 1264143252}
@@ -12661,9 +12679,9 @@ Animator:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2043821817}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 170ec1f7cb90c0a408b2169fd9e44a2b, type: 3}
-  m_Controller: {fileID: 9100000, guid: 0bfa6387f16f020499dfdad37184fb71, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6b6f6a8ba18f1427983ef1f5aeb2c875, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12677,7 +12695,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2043821817}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26aca4e839e6445fe803a4729c74674a, type: 3}
   m_Name: 
