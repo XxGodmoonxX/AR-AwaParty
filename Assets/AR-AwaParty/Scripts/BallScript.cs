@@ -23,9 +23,18 @@ public class BallScript : MonoBehaviour {
 		ball_blue.GetComponent<Rigidbody>().useGravity = false;
 		ball_red.GetComponent<Rigidbody>().useGravity = false;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+		// isSleepingでボールが停止してるか判断、ボールが停止していればRigidbodyのUsegravityにTrueを指定して重力働かせる これでボールは下に落下、そして透明なPlaneに衝突しバウンド
+		if (ball_blue.GetComponent<Rigidbody>().IsSleeping() &&
+		 		ball_red.GetComponent<Rigidbody>().IsSleeping() 
+		) {
+				ball_blue.GetComponent<Rigidbody>().useGravity = true;
+				ball_red.GetComponent<Rigidbody>().useGravity = true;
+				// ボールをバウンド
+				ball_blue.transform.position = new Vector3(ball_blue.transform.position.x, pos_blue, ball_blue.transform.position.z);
+				ball_red.transform.position = new Vector3(ball_red.transform.position.x, pos_red, ball_red.transform.position.z);
+		}
 	}
 }
