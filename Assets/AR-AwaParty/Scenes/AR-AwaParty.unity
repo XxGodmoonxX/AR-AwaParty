@@ -9304,6 +9304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119d24efe78bb476480328b8913c695e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ball_blue: {fileID: 2139580694}
+  ball_red: {fileID: 459505898}
 --- !u!1 &1440778448
 GameObject:
   m_ObjectHideFlags: 0
