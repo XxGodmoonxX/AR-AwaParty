@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BallScript : MonoBehaviour {
 
+	//PublicでGameobject型の変数
+
 	// Use this for initialization
 	void Start () {
 		
