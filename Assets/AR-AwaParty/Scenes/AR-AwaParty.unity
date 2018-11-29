@@ -3838,6 +3838,7 @@ GameObject:
   - component: {fileID: 459505902}
   - component: {fileID: 459505901}
   - component: {fileID: 459505900}
+  - component: {fileID: 459505903}
   m_Layer: 0
   m_Name: Sphere_red
   m_TagString: Untagged
@@ -3898,7 +3899,7 @@ SphereCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 459505898}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 60b9e741688c04858aaae41cb3ac4b3d, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3911,6 +3912,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 459505898}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &459505903
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459505898}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &462527426
 GameObject:
   m_ObjectHideFlags: 0
@@ -5844,7 +5860,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -9237,6 +9253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1416077162}
   - component: {fileID: 1416077163}
+  - component: {fileID: 1416077164}
   m_Layer: 0
   m_Name: Ball_parent
   m_TagString: Untagged
@@ -9276,6 +9293,17 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1416077164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416077161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119d24efe78bb476480328b8913c695e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1440778448
 GameObject:
   m_ObjectHideFlags: 0
@@ -13601,6 +13629,7 @@ GameObject:
   - component: {fileID: 2139580698}
   - component: {fileID: 2139580697}
   - component: {fileID: 2139580696}
+  - component: {fileID: 2139580699}
   m_Layer: 0
   m_Name: Sphere_blue
   m_TagString: Untagged
@@ -13661,7 +13690,7 @@ SphereCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139580694}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 60b9e741688c04858aaae41cb3ac4b3d, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -13674,3 +13703,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139580694}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &2139580699
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2139580694}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
