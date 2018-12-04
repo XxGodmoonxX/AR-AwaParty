@@ -9366,7 +9366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1416077162
 Transform:
   m_ObjectHideFlags: 0
@@ -9600,7 +9600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1460302779}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Planes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10780,7 +10780,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 0}
-  cam: {fileID: 0}
 --- !u!1 &1650171021
 GameObject:
   m_ObjectHideFlags: 0
@@ -12120,7 +12119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 1828299973}
-  cam: {fileID: 10}
 --- !u!1 &1846500308
 GameObject:
   m_ObjectHideFlags: 0
