@@ -41,7 +41,7 @@ namespace UnityEngine.XR.iOS {
 
 			// ボール発生位置をballprefab = sphereの位置に変更
 			// からのY方向に球を発射
-			sphere.transform.position = ballPrefab.transform.TransformPoint(0, 0.5f, 0);
+			sphere.transform.position = ballPrefab.transform.TransformPoint(0, 0.5f, -0.2f);
 			// sphere.transform.position = ballPrefab.transform.TransformDirection(0, 0.5f, 0);
 
 
