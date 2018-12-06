@@ -48,9 +48,6 @@ namespace UnityEngine.XR.iOS {
 			//力を加える
 			// sphere.GetComponent<Rigidbody>().AddForce(0, 0, 100f);
 			// sphere.GetComponent<Rigidbody>().AddForce(cam.transform.TransformDirection(0,1f,2f),ForceMode.Impulse);
-
-
-			// もうわかんないから一旦Cubeでやってみる
 		}
 	}
 }
