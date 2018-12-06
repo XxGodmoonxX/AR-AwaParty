@@ -10780,6 +10780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!1 &1650171021
 GameObject:
   m_ObjectHideFlags: 0
@@ -12048,12 +12049,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1828299973}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.003071765, y: 0.244, z: 0.388}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: -0.003071765, y: 0.244, z: 0.422}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 2043821818}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
 --- !u!23 &1828299975
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12094,7 +12095,7 @@ SphereCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1828299973}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 60b9e741688c04858aaae41cb3ac4b3d, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12119,6 +12120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 1828299973}
+  cam: {fileID: 10}
 --- !u!1 &1846500308
 GameObject:
   m_ObjectHideFlags: 0
