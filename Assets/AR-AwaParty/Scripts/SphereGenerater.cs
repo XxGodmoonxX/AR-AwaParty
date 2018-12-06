@@ -16,7 +16,6 @@ namespace UnityEngine.XR.iOS {
 
 		// Update is called once per frame
 		void Update () {
-
 			//CreatePrimitiveで動的にGameObjectであるCubeを生成する
       GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
 			//Cubeに適用するランダムな色を生成する
