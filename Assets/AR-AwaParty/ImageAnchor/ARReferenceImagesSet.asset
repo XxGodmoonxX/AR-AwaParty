@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c37f7746917f4760aa00e7ff7fd81dc, type: 3}
-  m_Name: DefeatBoss_ARReferenceImagesSet
+  m_Name: ARReferenceImagesSet
   m_EditorClassIdentifier: 
-  resourceGroupName: DefeatBoss_image
+  resourceGroupName: ARReferenceImageSet
   referenceImages:
   - {fileID: 11400000, guid: 06006a13d863440d1837a02b3bb6567d, type: 2}
   - {fileID: 11400000, guid: 58460e4e190354eb5978c9b3d33c2cb6, type: 2}
