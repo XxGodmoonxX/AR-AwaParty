@@ -11476,7 +11476,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1788669132}
   - component: {fileID: 1788669131}
-  - component: {fileID: 1788669134}
   m_Layer: 0
   m_Name: ImageAnchor
   m_TagString: Untagged
@@ -11510,19 +11509,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1788669134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1788669130}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b2be1c5634b84e8080b2a2491eca344, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  referenceImage: {fileID: 11400000, guid: 58460e4e190354eb5978c9b3d33c2cb6, type: 2}
-  prefabToGenerate: {fileID: 421512810}
 --- !u!1 &1795974915
 GameObject:
   m_ObjectHideFlags: 0
@@ -11700,7 +11686,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1828299973}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.003071765, y: 0.244, z: 0.422}
+  m_LocalPosition: {x: -0.003071765, y: 0.244, z: 0.49}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 2043821818}
