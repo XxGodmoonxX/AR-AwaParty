@@ -11,7 +11,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Unity Technologies
+  companyName: Motoki Watanabe
   productName: AR-AWAPA
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
