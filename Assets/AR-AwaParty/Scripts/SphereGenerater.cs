@@ -42,12 +42,10 @@ namespace UnityEngine.XR.iOS {
 			// ボール発生位置をballprefab = sphereの位置に変更
 			// からのY方向に球を発射
 			sphere.transform.position = ballPrefab.transform.TransformPoint(0, 0.5f, -0.2f);
-			// sphere.transform.position = ballPrefab.transform.TransformDirection(0, 0.5f, 0);
 
-
-			//力を加える
-			// sphere.GetComponent<Rigidbody>().AddForce(0, 0, 100f);
-			// sphere.GetComponent<Rigidbody>().AddForce(cam.transform.TransformDirection(0,1f,2f),ForceMode.Impulse);
+			//力を加える？
+			sphere.GetComponent<Rigidbody>().AddForce(0, 0, 0);
+			sphere.GetComponent<Rigidbody>().AddForce(cam.transform.TransformDirection(0,1f,2f),ForceMode.Impulse);
 		}
 	}
 }
