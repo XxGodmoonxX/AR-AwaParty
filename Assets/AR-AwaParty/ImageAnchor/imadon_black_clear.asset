@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0414577f9c6b244e696949154859a4af, type: 3}
-  m_Name: DefeatBoss_Player_no1
+  m_Name: imadon_black_clear
   m_EditorClassIdentifier: 
-  imageName: Player_No1
-  imageTexture: {fileID: 2800000, guid: 109ab09fc96954f778db51b31a0d9576, type: 3}
+  imageName: imadon_black_clear
+  imageTexture: {fileID: 2800000, guid: 494a7932c0a264f1993d97a0ad135fcc, type: 3}
   physicalSize: 4

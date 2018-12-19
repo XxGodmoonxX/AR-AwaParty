@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace UnityEngine.XR.iOS {
-	public class SphereGenerater : MonoBehaviour {
+	public class NewSphereGenerater : MonoBehaviour {
 
 		public GameObject ballPrefab;
 
@@ -27,7 +27,7 @@ namespace UnityEngine.XR.iOS {
       sphere.GetComponent<Renderer>().material = material;
 
 			//sphereの大きさ指定
-			float sphereSize = 0.5f;
+			float sphereSize = 1.0f;
       sphere.transform.localScale = new Vector3(sphereSize, sphereSize, sphereSize);
 
       //sphereにはRigidbodyを持たせて重力を与えておかないと、床の上には配置されないので注意が必要。Rigidbodyで重力を持たせないと宙に浮いた状態になる
@@ -41,7 +41,7 @@ namespace UnityEngine.XR.iOS {
 
 			// ボール発生位置をballprefab = sphereの位置に変更
 			// からのY方向に球を発射
-			sphere.transform.position = ballPrefab.transform.TransformPoint(0, 0.5f, -0.2f);
+			sphere.transform.position = ballPrefab.transform.TransformPoint(Random.Range(-0.2f, 0.2f), 0.1f, -0.1f);
 
 			//力を加える？
 			// sphere.GetComponent<Rigidbody>().AddForce(0, 0, 0);
