@@ -21,7 +21,7 @@ namespace UnityEngine.XR.iOS {
 			//Cubeに適用するランダムな色を生成する
       Material material = new Material(Shader.Find("Diffuse")) {
       	// color = new Color(Random.value, Random.value, Random.value)
-				color = new Color(Random.value, Random.value, Random.value)
+				color = new Color(200, 0, 0)
       };
 			//ランダムに変化する色をCubeに適用する
       sphere.GetComponent<Renderer>().material = material;
