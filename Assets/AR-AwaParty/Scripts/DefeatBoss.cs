@@ -104,7 +104,8 @@ namespace UnityEngine.XR.iOS
                 //Cubeの大きさも0.2fとして指定している
                 cube.transform.position = cam.transform.TransformPoint(0, 0, 0.5f);
 				// cube.transform.position = cam.transform.TransformPoint(0.5f, 0, 0);
-                cube.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+				float sphereSize = 1.0f;
+                cube.transform.localScale = new Vector3(sphereSize, sphereSize, sphereSize);
                 //CubeにはRigidbodyを持たせて重力を与えておかないと、床の上には配置されないので注意が必要。Rigidbodyで重力を持たせないとCubeは宙に浮いた状態になる
                 cube.AddComponent<Rigidbody>();
 				//これでタップしたときに斜め上にキューブ飛んでいく？そして衝突計算
