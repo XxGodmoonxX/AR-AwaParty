@@ -19,23 +19,25 @@ public class sound : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		// float[] spectrum = new float[1024];
-    // AudioListener.GetSpectrumData(spectrum, 0, FFTWindow.Rectangular);
-		// Debug.Log(spectrum[1]);
+		//音声データの周波数成分を解析する
+		float[] spectrum = new float[256];
+		//音声出力のサンプリングレートを F , spectrum の長さを Q とすると spectrum[N] には N * F/2 / Q Hzの周波数成分が含まれています。
+    AudioListener.GetSpectrumData(spectrum, 0, FFTWindow.Rectangular);
+		Debug.Log(spectrum.Length);
 
-		// //ピッチの取得
-		// var maxIndex = 0;
-		// var maxValue = 0.0f;
-		// for (int i = 0; i <= spectrum.Length; i++) {
-		// 	var val = spectrum[i];
-		// 	if (val > maxValue) {
-		// 		// maxValue が最も大きい周波数成分の値で
-		// 		maxValue = val;
-		// 		// maxIndex がそのインデックス。欲しいのはこっち。
-		// 		maxIndex = i;
-		// 	}
-		// }
+		//ピッチの取得
+		var maxIndex = 0;
+		var maxValue = 0.0f;
+		for (int i = 0; i < spectrum.Length; i++) {
+			var val = spectrum[i];
+			if (val > maxValue) {
+				// maxValue が最も大きい周波数成分の値で
+				maxValue = val;
+				// maxIndex がそのインデックス。欲しいのはこっち。
+				maxIndex = i;
+			}
+		}
 
-		// var freq = maxIndex * AudioSettings.outputSampleRate / 2 / spectrum.Length;
+		var freq = maxIndex * AudioSettings.outputSampleRate / 2 / spectrum.Length;
 	}
 }
