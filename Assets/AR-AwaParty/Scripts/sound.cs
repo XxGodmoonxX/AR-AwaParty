@@ -5,6 +5,9 @@ using UnityEngine;
 public class sound : MonoBehaviour {
 
 	public int noteNumberNum;
+	public void ReturnAccess(){
+  	Debug.Log ("アクセス成功！！");
+  }
 
 	// Use this for initialization
 	void Start () {
