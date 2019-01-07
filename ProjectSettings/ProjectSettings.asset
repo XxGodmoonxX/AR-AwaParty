@@ -384,7 +384,7 @@ PlayerSettings:
   enableCrashReportAPI: 0
   cameraUsageDescription: AR BABY
   locationUsageDescription: 
-  microphoneUsageDescription: 
+  microphoneUsageDescription: Microphone
   switchNetLibKey: 
   switchSocketMemoryPoolSize: 6144
   switchSocketAllocatorPoolSize: 128
