@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class sound : MonoBehaviour {
 
+	public int noteNumberNum;
+
 	// Use this for initialization
 	void Start () {
 		// 空の Audio Sourceを取得
@@ -42,6 +44,7 @@ public class sound : MonoBehaviour {
 		// 周波数からMIDIノートナンバーを計算
     var noteNumber = CalculateNoteNumberFromFrequency(freq);
 		Debug.Log(noteNumber);
+		noteNumberNum = noteNumber;
 	}
 
 	//周波数が計算できたので、最後にこれを音名に変換します。周波数と音名の対応はMIDI tuning standardによると以下のようにして計算できます。
