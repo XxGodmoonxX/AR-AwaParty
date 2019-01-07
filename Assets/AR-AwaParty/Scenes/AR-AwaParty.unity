@@ -10678,9 +10678,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1334882122}
-  - component: {fileID: 1334882123}
   - component: {fileID: 1334882124}
-  - component: {fileID: 1334882125}
   - component: {fileID: 1334882126}
   m_Layer: 0
   m_Name: SoundObject
@@ -10702,21 +10700,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1334882123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1334882121}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e2e2b2587531475586c0a8d20e14a1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberOfSamples: 1024
-  bandType: 3
-  fallSpeed: 0.08
-  sensibility: 8
 --- !u!82 &1334882124
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10797,21 +10780,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &1334882125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1334882121}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5682c85981acf405eab1073a3c23d0d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spectrum: {fileID: 1334882123}
-  cubes:
-  - {fileID: 0}
-  scale: 100
 --- !u!114 &1334882126
 MonoBehaviour:
   m_ObjectHideFlags: 0
