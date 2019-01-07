@@ -6,6 +6,7 @@ namespace UnityEngine.XR.iOS {
 	public class NewSphereGenerater : MonoBehaviour {
 
 		public GameObject ballPrefab;
+		public GameObject soundObject;
 
 		// public Camera cam;
 
