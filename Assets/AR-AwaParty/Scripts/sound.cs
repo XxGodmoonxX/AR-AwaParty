@@ -6,14 +6,14 @@ public class sound : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		AudioSource aud = GetComponent<AudioSource>();
+		AudioSource audio = GetComponent<AudioSource>();
 		// Audio Source の Audio Clip をマイク入力に設定
     // マイク名nullならデフォルト、ループするかどうか、AudioClipの秒数、サンプリングレート を指定する
-    aud.clip = Microphone.Start(null, true, 10, 44100);
+    audio.clip = Microphone.Start(null, true, 10, 44100);
 		// マイクが Ready になるまで待機（一瞬）
 		while (Microphone.GetPosition(null) <= 0) {}
 		// 再生開始（録った先から再生、スピーカーから出力するとハウリングします）
-    aud.Play();
+    audio.Play();
 	}
 
 	// Update is called once per frame
