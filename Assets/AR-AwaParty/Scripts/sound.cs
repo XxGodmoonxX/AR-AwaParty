@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; //Text使うため
 
 public class sound : MonoBehaviour {
 
@@ -8,6 +9,10 @@ public class sound : MonoBehaviour {
 	public void ReturnAccess(){
   	Debug.Log ("アクセス成功！！");
   }
+
+	//スマホ上にSoundのなんかの変数表示
+	public GameObject soundCanvas; //Text
+
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +25,9 @@ public class sound : MonoBehaviour {
 		while (Microphone.GetPosition(null) <= 0) {}
 		// 再生開始（録った先から再生、スピーカーから出力するとハウリングします）
     audio.Play();
+
+		//スマホ上にSoundのなんかの変数表示
+		Text sound_text = soundCanvas.GetComponent<Text>();
 	}
 
 	// Update is called once per frame
@@ -48,6 +56,10 @@ public class sound : MonoBehaviour {
     var noteNumber = CalculateNoteNumberFromFrequency(freq);
 		// Debug.Log(noteNumber);
 		noteNumberNum = noteNumber;
+
+		//スマホ上にSoundのなんかの変数表示
+		Text sound_text = soundCanvas.GetComponent<Text>();
+		sound_text.text = noteNumber.ToString();
 	}
 
 	//周波数が計算できたので、最後にこれを音名に変換します。周波数と音名の対応はMIDI tuning standardによると以下のようにして計算できます。
