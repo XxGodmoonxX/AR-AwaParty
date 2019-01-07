@@ -137,7 +137,7 @@ namespace UnityEngine.XR.iOS
 
 		void SetScore()
 		{
-			scoreText.text = string.Format( "Score:{0}", score );
+			// scoreText.text = string.Format( "Score:{0}", score );
 		}
 	}
 }
