@@ -50,9 +50,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/UnityARKitPlugin/Examples/ARKit2.0/UnityARObjectAnchor/UnityARObjectAnchor.unity
     guid: 9b7966300d2d04d8e86ace41d59d178c
-  - enabled: 1
+  - enabled: 0
     path: Assets/AR-AwaParty/Scenes/AR-AwaParty.unity
     guid: 25450cfa11ff8417b95ea3c918026e67
   - enabled: 0
     path: Assets/AR-AwaParty/Scenes/EndScene.unity
     guid: 2707eb3c53f834445958c337b7dc2c91
+  - enabled: 1
+    path: Assets/AR-AwaParty/Scenes/MultiPlayer.unity
+    guid: 38369dcd738474debb16c786467b2499
