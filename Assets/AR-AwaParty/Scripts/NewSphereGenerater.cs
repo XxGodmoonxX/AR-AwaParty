@@ -32,7 +32,6 @@ namespace UnityEngine.XR.iOS {
       sphere.transform.localScale = new Vector3(sphereSize, sphereSize, sphereSize);
 
       //sphereにはRigidbodyを持たせて重力を与えておかないと、床の上には配置されないので注意が必要。Rigidbodyで重力を持たせないと宙に浮いた状態になる
-
 			// Rigidbodyを取得
       sphere.AddComponent<Rigidbody>();
 
@@ -47,6 +46,9 @@ namespace UnityEngine.XR.iOS {
 			//力を加える？
 			// sphere.GetComponent<Rigidbody>().AddForce(0, 0, 0);
 			// sphere.GetComponent<Rigidbody>().AddForce(cam.transform.TransformDirection(0,1f,2f),ForceMode.Impulse);
+
+			//sound.csからデータを取得
+			soundObject.GetComponent<sound>().ReturnAccess();
 		}
 	}
 }

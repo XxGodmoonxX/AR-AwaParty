@@ -46,7 +46,7 @@ public class sound : MonoBehaviour {
 		var freq = maxIndex * AudioSettings.outputSampleRate / 2 / spectrum.Length;
 		// 周波数からMIDIノートナンバーを計算
     var noteNumber = CalculateNoteNumberFromFrequency(freq);
-		Debug.Log(noteNumber);
+		// Debug.Log(noteNumber);
 		noteNumberNum = noteNumber;
 	}
 

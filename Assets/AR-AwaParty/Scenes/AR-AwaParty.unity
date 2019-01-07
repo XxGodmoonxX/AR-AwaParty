@@ -8011,6 +8011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 963976553}
+  soundObject: {fileID: 1334882121}
 --- !u!1 &965042586
 GameObject:
   m_ObjectHideFlags: 0
@@ -10707,7 +10708,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1334882121}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6abd29cdb703f4b10b0a59acf96d0b7b, type: 3}
   m_Name: 
@@ -10804,6 +10805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75001029959e84727b0e7858acf5699d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteNumberNum: 0
 --- !u!1 &1335888643
 GameObject:
   m_ObjectHideFlags: 0
