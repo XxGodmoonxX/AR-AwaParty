@@ -6,6 +6,7 @@ public class sound : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// 空の Audio Sourceを取得
 		AudioSource audio = GetComponent<AudioSource>();
 		// Audio Source の Audio Clip をマイク入力に設定
     // マイク名nullならデフォルト、ループするかどうか、AudioClipの秒数、サンプリングレート を指定する
