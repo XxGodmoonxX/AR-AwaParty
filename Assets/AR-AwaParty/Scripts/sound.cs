@@ -23,7 +23,7 @@ public class sound : MonoBehaviour {
 		float[] spectrum = new float[256];
 		//音声出力のサンプリングレートを F , spectrum の長さを Q とすると spectrum[N] には N * F/2 / Q Hzの周波数成分が含まれています。
     AudioListener.GetSpectrumData(spectrum, 0, FFTWindow.Rectangular);
-		Debug.Log(spectrum.Length);
+		// Debug.Log(spectrum.Length);
 
 		//ピッチの取得
 		var maxIndex = 0;
@@ -39,6 +39,9 @@ public class sound : MonoBehaviour {
 		}
 
 		var freq = maxIndex * AudioSettings.outputSampleRate / 2 / spectrum.Length;
+		// 周波数からMIDIノートナンバーを計算
+    var noteNumber = CalculateNoteNumberFromFrequency(freq);
+		Debug.Log(noteNumber);
 	}
 
 	//周波数が計算できたので、最後にこれを音名に変換します。周波数と音名の対応はMIDI tuning standardによると以下のようにして計算できます。
