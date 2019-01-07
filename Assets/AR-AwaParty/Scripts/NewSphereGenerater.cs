@@ -22,6 +22,7 @@ namespace UnityEngine.XR.iOS {
 
 			// soundObject.GetComponent<sound>().ReturnAccess();
 			int noteNumber = soundObject.GetComponent<sound>().noteNumberNum;
+			Debug.Log(noteNumber);
 
 			//Sphere生成
 
@@ -30,7 +31,7 @@ namespace UnityEngine.XR.iOS {
 			//Cubeに適用するランダムな色を生成する
       Material material = new Material(Shader.Find("Diffuse")) {
       	// color = new Color(Random.value, Random.value, Random.value)
-				color = new Color(Random.Range(noteNumber*3, 255), Random.Range(0, noteNumber*3), Random.Range(0, noteNumber*3))
+				color = new Color(Random.Range(noteNumber*3, 255), Random.Range(0, 10), Random.Range(0, 10))
       };
 			//ランダムに変化する色をCubeに適用する
       sphere.GetComponent<Renderer>().material = material;
