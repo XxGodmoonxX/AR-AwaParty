@@ -5,6 +5,8 @@ using UnityEngine.UI; //Text使うため
 
 public class sound : MonoBehaviour {
 
+	private AudioSource audio;
+
 	public int noteNumberNum;
 	public void ReturnAccess(){
   	Debug.Log ("アクセス成功！！");
@@ -13,11 +15,10 @@ public class sound : MonoBehaviour {
 	//スマホ上にSoundのなんかの変数表示
 	public GameObject soundCanvas; //Text
 
-
 	// Use this for initialization
 	void Start () {
 		// 空の Audio Sourceを取得
-		AudioSource audio = GetComponent<AudioSource>();
+		audio = GetComponent<AudioSource>();
 		// Audio Source の Audio Clip をマイク入力に設定
     // マイク名nullならデフォルト、ループするかどうか、AudioClipの秒数、サンプリングレート を指定する
     audio.clip = Microphone.Start(null, true, 10, 44100);
