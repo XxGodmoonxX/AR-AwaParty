@@ -28,6 +28,7 @@ public class sound : MonoBehaviour {
 
 		//スマホ上にSoundのなんかの変数表示
 		Text sound_text = soundCanvas.GetComponent<Text>();
+		sound_text.text = 0.ToString();
 	}
 
 	// Update is called once per frame
