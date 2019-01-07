@@ -17,12 +17,21 @@ namespace UnityEngine.XR.iOS {
 
 		// Update is called once per frame
 		void Update () {
+
+			//sound.csからデータを取得
+
+			// soundObject.GetComponent<sound>().ReturnAccess();
+			int noteNumber = soundObject.GetComponent<sound>().noteNumberNum;
+			Debug.Log(noteNumber);
+
+			//Sphere生成
+
 			//CreatePrimitiveで動的にGameObjectであるCubeを生成する
       GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
 			//Cubeに適用するランダムな色を生成する
       Material material = new Material(Shader.Find("Diffuse")) {
       	// color = new Color(Random.value, Random.value, Random.value)
-				color = new Color(200, 0, 0)
+				color = new Color(noteNumber, 0, 0)
       };
 			//ランダムに変化する色をCubeに適用する
       sphere.GetComponent<Renderer>().material = material;
@@ -46,9 +55,6 @@ namespace UnityEngine.XR.iOS {
 			//力を加える？
 			// sphere.GetComponent<Rigidbody>().AddForce(0, 0, 0);
 			// sphere.GetComponent<Rigidbody>().AddForce(cam.transform.TransformDirection(0,1f,2f),ForceMode.Impulse);
-
-			//sound.csからデータを取得
-			soundObject.GetComponent<sound>().ReturnAccess();
 		}
 	}
 }
