@@ -40,4 +40,9 @@ public class sound : MonoBehaviour {
 
 		var freq = maxIndex * AudioSettings.outputSampleRate / 2 / spectrum.Length;
 	}
+
+	//周波数が計算できたので、最後にこれを音名に変換します。周波数と音名の対応はMIDI tuning standardによると以下のようにして計算できます。
+	public static int CalculateNoteNumberFromFrequency(float freq) {
+  	return Mathf.FloorToInt(69 + 12 * Mathf.Log(freq / 440, 2));
+	}
 }
