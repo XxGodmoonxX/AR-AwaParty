@@ -34,8 +34,8 @@ namespace UnityEngine.XR.iOS
         // }
 
 		void Start () {
-			score = 0;
-			SetScore();   //初期スコアを代入して表示
+			// score = 0;
+			// SetScore();   //初期スコアを代入して表示
 		}
 		
 		// Update is called once per frame
@@ -113,7 +113,7 @@ namespace UnityEngine.XR.iOS
 				// cube.GetComponent<Rigidbody>().AddForce(cam.transform.TransformDirection(2f, 0, 0),ForceMode.Impulse);
      	 	}
 
-			score += 1;
+			// score += 1;
 			#endif
 		}
 
