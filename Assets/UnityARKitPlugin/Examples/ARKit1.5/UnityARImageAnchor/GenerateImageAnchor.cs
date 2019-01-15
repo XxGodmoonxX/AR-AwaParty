@@ -48,7 +48,8 @@ public class GenerateImageAnchor : MonoBehaviour {
             }
             else if (imageAnchorGO.activeSelf)
             {
-                imageAnchorGO.SetActive(false);
+								//コメントアウトしてみる
+                // imageAnchorGO.SetActive(false);
             }
         }
 
