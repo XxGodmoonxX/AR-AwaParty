@@ -38,8 +38,20 @@ public class BreakOutSphereGenerator : MonoBehaviour {
 				//これ斜めかな
 				// sphere.GetComponent<Rigidbody>().AddForce(cam.transform.TransformDirection(0,1f,2f),ForceMode.Impulse);
 				//これ横？
-				sphere.GetComponent<Rigidbody>().AddForce(cam.transform.TransformDirection(0, 2f, 0),ForceMode.Impulse);
+				sphere.GetComponent<Rigidbody>().AddForce(cam.transform.TransformDirection(0, 0, 7f),ForceMode.Impulse);
 			}
+		}
+	}
+
+	private void OnCollisionEnter(Collision collision) {
+		Debug.Log("OnCollisionEnter");
+		// if (collision.gameObject.CompareTag("BreakOut")) {
+		// 	//Sphereがぶつかった先がBreakOutなら消す
+		// 	Destroy(collision.gameObject);
+		// }
+		if (collision.gameObject.tag == "BreakOut") {
+			//Sphereがぶつかった先がBreakOutなら消す
+			Destroy(collision.gameObject);
 		}
 	}
 }
